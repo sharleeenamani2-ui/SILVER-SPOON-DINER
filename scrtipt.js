@@ -2,33 +2,37 @@ const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 const navbar = document.querySelector(".navbar");
 
-// 1. Updated Toggle (works for all screen sizes handled by CSS)
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    
-    // Switch between ☰ and ✕ for a better user experience
-    if (navLinks.classList.contains("active")) {
-        menuToggle.innerHTML = "✕";
-    } else {
-        menuToggle.innerHTML = "☰";
-    }
-});
-
-// 2. Scroll Effect: Makes navbar readable when scrolling down
+// Navbar Scroll Effect
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = "rgba(0, 0, 0, 0.95)";
-        navbar.style.padding = "10px 40px";
+    if (window.scrollY > 100) {
+        navbar.style.background = "rgba(10, 10, 10, 0.95)";
+        navbar.style.height = "70px";
     } else {
         navbar.style.background = "transparent";
-        navbar.style.padding = "20px 40px";
+        navbar.style.height = "90px";
     }
 });
 
-// 3. Auto-Close menu when clicking a link (optional but recommended)
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        menuToggle.innerHTML = "☰";
-    });
+// Mobile Toggle
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuToggle.innerHTML = navLinks.classList.contains("active") ? "✕" : "☰";
 });
+
+document.getElementById('footer-subscribe').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input').value;
+    
+    // Simple UI feedback
+    this.innerHTML = `<p style="color: #c5a059; font-size: 0.8rem; letter-spacing: 1px;">THANK YOU FOR SUBSCRIBING.</p>`;
+    
+    console.log("Newsletter subscription for:", email);
+});
+
+
+
+
+
+
+
+

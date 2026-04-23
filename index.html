@@ -3,57 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Spoon Diner</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Silver Spoon | Fine Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-   <nav class="navbar">
-    <div class="logo">Silver Spoon</div>
+    <nav class="navbar">
+        <div class="logo">SILVER SPOON</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
 
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reservations</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-
-    <div class="menu-toggle" id="menuToggle">☰</div>
-</nav>
-        
-
-    <!-- HERO WITH VIDEO -->
     <section class="hero">
         <video autoplay muted loop playsinline id="bg-video">
             <source src="/videos/background video.mp4" type="video/mp4">
         </video>
-
         <div class="overlay"></div>
 
+        
         <div class="hero-content">
-            <h1>Silver Spoon Diner</h1>
-            <p>Where every meal feels like a celebration</p>
-            <button>Book Now</button>
+            <p class="hero-subtitle">Exquisite Dining Experience</p>
+            <h1>Where Flavors <br><span class="gold-text">Tell a Story</span></h1>
+            <p class="hero-description">
+                Silver Spoon brings together the finest ingredients, culinary <br>
+                passion, and unforgettable moments.
+            </p>
+            <div class="hero-btns">
+                <a href="#" class="btn-filled">EXPLORE MENU</a>
+                <a href="#" class="btn-outline">BOOK A TABLE</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse-icon"></div>
+            
         </div>
     </section>
-    <section class="info-section">
-    <div class="container">
-        <div class="info-grid">
-            <div class="info-image">
-                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Exquisite Dining">
-            </div>
-            <div class="info-text">
-                <h2>Exquisite Dining Experience</h2>
-                <p>From farm-to-table ingredients to our signature cocktails, every detail at Silver Spoon is crafted to provide a memorable culinary journey.</p>
-                <a href="#" class="btn-secondary">Explore Our Menu</a>
-            </div>
+    <section class="luxury">
+    
+    <div class="divider"></div>
+
+    <h1>A Proudly Independent Luxury Hotel</h1>
+
+    <p>
+        Set across eight acres of lush landscaped grounds, Glee Nairobi is designed
+        for business, events, and refined stays — offering expansive meeting spaces,
+        distinctive dining, and resort-style calm within the city.
+    </p>
+
+    <button>WATCH HOTEL FILM</button>
+
+</section>
+<section class="asymmetric-gallery">
+    <h2 class="section-title">The Lifestyle</h2>
+
+    <div class="stagger-row">
+        <div class="stagger-text">
+            <h3 class="serif-text">Garden Oasis</h3>
+            <p>Dine amidst the scent of blooming jasmine and the soft glow of lanterns.</p>
+            <a href="/reservations" class="gold-link">DISCOVER THE GARDEN</a>
+        </div>
+        <div class="stagger-image">
+            <img src="img/garden.jpg" alt="Garden Patio">
+        </div>
+    </div>
+
+    <div class="stagger-row reverse offset">
+        <div class="stagger-image">
+            <img src="img/swimming pool.jpg" alt="Infinity Pool">
+        </div>
+        <div class="stagger-text">
+            <h3 class="serif-text">Infinity Blue</h3>
+            <p>A crystal clear escape designed for absolute tranquility under the sun.</p>
+            <a href="img/swimming pool.jpg" class="gold-link">BOOK A DAY BED</a>
+        </div>  
+    </div>
+
+    <div class="stagger-row">
+        <div class="stagger-text">
+            <h3 class="serif-text">The Royal Suite</h3>
+            <p>Unmatched luxury with panoramic views of the city skyline.</p>
+            <a href="/reservations" class="gold-link">VIEW THE SUITES</a>
+        </div>
+        <div class="stagger-image">
+            <img src="img/room.jpg" alt="Luxury Room">
         </div>
     </div>
 </section>
 
-    <script src="script.js"></script>
+
+
+
+
+
+
+<footer class="luxury-footer">
+    <div class="footer-top">
+        <div class="footer-col brand-col">
+            <h2 class="footer-logo">SILVER SPOON</h2>
+            <p class="footer-tagline">Exquisite Dining • Luxury Suites • Wellness</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul class="footer-links">
+                <li><a href="#">Order by Phone</a></li>
+                <li><a href="#">WhatsApp Concierge</a></li>
+                <li><a href="#">Gift Vouchers</a></li>
+                <li><a href="#">Restaurant Locator</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>INFORMATION</h3>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>ABOUT US</h3>
+            <ul class="footer-links">
+                <li><a href="#">Our Heritage</a></li>
+                <li><a href="#">Culinary Standards</a></li>
+                <li><a href="#">Health & Safety</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>KEEP IN TOUCH</h3>
+            <ul class="footer-socials">
+                <li><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> INSTAGRAM</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-middle">
+        <div class="payment-methods">
+            <span class="pay-icon">M-PESA</span>
+            <span class="pay-icon">VISA</span>
+            <span class="pay-icon">MASTERCARD</span>
+            <span class="pay-icon">PAYSTACK</span>
+        </div>
+
+        <div class="newsletter-box">
+            <label>SUBSCRIBE TO OUR DISPATCHES</label>
+            <form id="footer-subscribe">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">→</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SILVER SPOON RESTAURANT & THE SILVER MARKET. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+
 </body>
 </html>
-
