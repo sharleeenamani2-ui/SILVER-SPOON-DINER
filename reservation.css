@@ -1,0 +1,265 @@
+
+body {
+  margin: 0;
+  
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+}
+
+
+
+:root {
+    --white: #fcfcfc;
+    --gold: #c5a059; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+    padding: 0 5%; 
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+
+  .logo {
+    color: var(--white);
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex: 2; 
+}
+
+
+.navbar::after {
+    content: "";
+    flex: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.nav-links a:hover { color: var(--gold); }
+         
+       
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+  .welcome-intro {
+    padding: 100px 10% 40px; /* Space below the main slideshow */
+    text-align: center;
+    background: transparent;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-family: 'Poppins', sans-serif;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.welcome-intro h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Scales based on screen size */
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.gold-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 25px auto;
+}
+
+.welcome-intro p {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(252, 252, 252, 0.7); /* Soft Champagne White */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* ROOM SECTIONS */
+
+/* Container for all room rows */
+.rooms-section {
+    padding: 150px 10% 100px; /* Top padding for navbar, side padding for breathability */
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* Large space between different room types */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.room-card {
+    display: flex;
+    align-items: flex-start; /* Aligns text to the top of the image */
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* IMAGE SIDE: 60% Width */
+.room-gallery {
+    flex: 0 0 60%; 
+    height: 650px; 
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    display: flex;
+}
+
+.room-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents images from stretching */
+    display: block;
+    object-position: center;
+}
+.roomSlides {
+    width: 100%;
+    height: 100%; 
+    display: none; 
+}
+
+
+.roomSlides[style*="display: block"] {
+    display: block !important;
+}
+
+/* TEXT SIDE: 40% Width */
+.room-details {
+    flex: 0 0 35%; 
+    padding-top: 10px;
+}
+
+.room-details h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* AMENITIES LIST */
+.amenities {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.amenities li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--gold);
+}
+
+/* BUTTONS */
+.action-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-now-btn {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 12px 35px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.book-now-btn:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+/* For every second room, flip the image and text */
+.room-card.reverse {
+    flex-direction: row-reverse;
+}
