@@ -64,7 +64,7 @@
         </div>
         <div class="room-details">
             <h3>SUPER-DELUXE-BEDROOM</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
     </div>
 
@@ -75,7 +75,7 @@
         </div>
         <div class="room-details">
             <h3>THE CLASSIC ONE</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
     </div>
 </section><section class="rooms-section">
@@ -87,7 +87,7 @@
         </div>
         <div class="room-details">
             <h3>DOUBLE-BEDDED BEDROOM</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
     </div>
 
@@ -98,7 +98,7 @@
         </div>
         <div class="room-details">
             <h3>TWIN-BEDDED BEDROOM</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
     </div>
 </section><section class="rooms-section">
@@ -110,7 +110,7 @@
         </div>
         <div class="room-details">
             <h3>DOUBLE-BEDDED BEDROOM</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
     </div>
 
@@ -121,8 +121,61 @@
         </div>
         <div class="room-details">
             <h3>TWIN-BEDDED BEDROOM</h3>
-            <button class="book-now-btn">BOOK NOW</button>
+            <a href="#room-reservation" class="book-now-btn">BOOK NOW</a>
         </div>
+    </div>
+</section>
+
+<section class="booking-portal" id="room-reservation">
+    <div class="booking-grid">
+        
+        <div class="booking-card">
+            <span class="eyebrow">Stay With Us</span>
+            <h2>Reserve a Suite</h2>
+            <form class="reservation-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option>The Classic Double</option>
+                    <option>Executive Twin</option>
+                    <option>Presidential Suite</option>
+                </select>
+                <div class="form-row">
+                    <input type="date" title="Check-in">
+                    <input type="date" title="Check-out">
+                </div>
+                
+                <div class="payment-section">
+                    <p>Secure Payment via</p>
+                    <div class="payment-icons">💳 🏦 🅿️</div>
+                    <input type="text" placeholder="Card Number">
+                </div>
+                
+                <button type="submit" class="submit-btn">Confirm Room & Pay</button>
+            </form>
+        </div>
+
+        <div class="booking-card">
+            <span class="eyebrows">Experience</span>
+            <h2>Book a Date</h2>
+            <p class="form-desc">Reserve a table for dinner or a private event space.</p>
+            <form class="reservation-form">
+                <input type="text" placeholder="Full Name" required>
+                <select>
+                    <option value="" disabled selected>Event Type</option>
+                    <option>Romantic Dinner</option>
+                    <option>Corporate Event</option>
+                    <option>Private Party</option>
+                </select>
+                <input type="datetime-local" title="Date and Time">
+                <input type="number" placeholder="Number of Guests">
+                <textarea placeholder="Special Requests (Allergies, Decor, etc.)"></textarea>
+                
+                <button type="submit" class="submit-btn gold-bg">Request Date</button>
+            </form>
+        </div>
+
     </div>
 </section>
    

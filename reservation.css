@@ -263,3 +263,92 @@ body {
 .room-card.reverse {
     flex-direction: row-reverse;
 }
+
+
+
+.booking-portal {
+    padding: 100px 10%;
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    scroll-behavior: smooth; /* Makes the "jump" to the form look like a slide */
+}
+
+.booking-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking-card {
+    flex: 1;
+    min-width: 350px;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 8px;
+}
+
+.booking-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(197, 160, 89, 0.3);
+}
+
+.payment-section p {
+    font-size: 0.8rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.submit-btn {
+    padding: 15px;
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn.gold-bg {
+    background: var(--gold);
+    color: black;
+}
+
+.submit-btn:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
