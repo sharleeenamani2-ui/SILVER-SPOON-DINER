@@ -454,6 +454,28 @@ body {
     color: #666;
     letter-spacing: 1px;
 }
+/*  SMALL PHONES */
+@media screen and (max-width: 480px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-col:first-child {
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
