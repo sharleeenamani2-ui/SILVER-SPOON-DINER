@@ -416,3 +416,97 @@ body {
     box-shadow: 0 0 15px rgba(212,175,55,0.4);
     border-color: var(--gold);
 }
+/* RESPONSIVE STYLES FOR PHONES */
+@media screen and (max-width: 768px) {
+    
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    .logo {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+
+
+    .welcome-intro {
+        padding: 80px 20px 40px;
+    }
+
+    .welcome-intro h1 {
+        font-size: 1.8rem; 
+    }
+
+    
+    .rooms-section {
+        padding: 50px 20px;
+        gap: 60px;
+    }
+
+    .room-card, 
+    .room-card.reverse {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .room-gallery {
+        flex: none;
+        width: 100%;
+        height: 350px; 
+    }
+
+    .room-details {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .amenities li {
+        justify-content: center; 
+    }
+
+    .action-row {
+        justify-content: center;
+    }
+
+    /* 4. Booking Portal */
+    .booking-portal {
+        padding: 60px 20px;
+    }
+
+    .booking-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-card {
+        width: 100%;
+        min-width: unset; 
+        padding: 25px;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .welcome-intro h1 {
+        font-size: 1.5rem;
+    }
+    
+    .room-gallery {
+        height: 250px;
+    }
+
+    .book-now-btn {
+        width: 100%; 
+    }
+}
