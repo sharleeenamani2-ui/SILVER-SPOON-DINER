@@ -1,0 +1,94 @@
+/* --- VARIABLES --- */
+:root {
+    --gold: #d4af37;
+    --dark-gold: #c09a53;
+    --dark: #0a0a0a;
+    --white: #ffffff;
+    --serif: 'Playfair Display', serif;
+    --sans: 'Poppins', sans-serif;
+}
+
+/* --- RESET --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--dark); color: var(--white); font-family: var(--sans); }
+
+/* --- SMART NAVBAR --- */
+.navbar {
+    position: fixed;
+    top: 0; width: 100%; height: 90px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 5%; z-index: 2000;
+    transition: all 0.4s ease;
+    background: transparent;
+}
+
+/* Navbar turns dark when scrolling over dark sections */
+.navbar.scrolled {
+    background-color: rgba(10, 10, 10, 0.98);
+    height: 70px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Navbar text switches to black when over the WHITE contact section */
+.navbar.on-white {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eee;
+}
+.navbar.on-white .logo, 
+.navbar.on-white .nav-links a {
+    color: #000 !important;
+}
+
+.logo { font-family: var(--serif); font-size: 1.5rem; letter-spacing: 4px; font-weight: 700; color: var(--white); }
+.nav-links { display: flex; list-style: none; gap: 40px; }
+.nav-links a { text-decoration: none; color: var(--white); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; }
+
+/* --- STORY SECTION (Matches Image 1) --- */
+.story-centered { 
+    padding: 150px 10%; 
+    background: var(--dark); 
+    text-align: left; /* Left aligned like your reference image */
+}
+.story-centered h2 { font-family: var(--serif); font-size: 3.5rem; margin-bottom: 10px; }
+.gold-line { width: 60px; height: 2px; background: var(--gold); margin-bottom: 30px; }
+.description { max-width: 800px; color: var(--white); line-height: 1.8; font-size: 1.1rem; margin-bottom: 30px; }
+.image-quote { color: var(--gold); font-style: italic; font-size: 1.2rem; margin-bottom: 5px; }
+.signature { color: var(--white); opacity: 0.8; font-size: 0.9rem; }
+
+/* --- WHITE CONTACT LAYOUT (Matches Image 2) --- */
+.contact-white-layout {
+    background: var(--white) !important;
+    color: #1a1a1a;
+    padding: 120px 8%;
+}
+.big-title { font-family: var(--serif); font-size: 4rem; text-align: center; color: #000; margin-bottom: 60px; }
+.contact-split-container { display: flex; gap: 60px; align-items: flex-start; }
+
+.map-wrapper { 
+    flex: 1.2; height: 500px; position: relative; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1); 
+}
+.btn-map-overlay {
+    position: absolute; top: 20px; left: 20px;
+    background: #9a7b4f; color: white; padding: 12px 24px;
+    font-size: 0.7rem; letter-spacing: 1px; text-decoration: none; font-weight: 600;
+}
+
+.contact-details { flex: 1; }
+.location-name { font-family: var(--serif); font-size: 2.2rem; margin-bottom: 20px; }
+.detail-block { margin-bottom: 30px; }
+.detail-block ul { list-style: none; }
+.detail-block li { position: relative; padding-left: 25px; margin-bottom: 8px; color: #444; font-size: 0.9rem; }
+.detail-block li::before { content: "—"; position: absolute; left: 0; color: #ccc; }
+
+.mini-label { text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; color: #999; margin-bottom: 10px; }
+.main-phone { font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; }
+
+/* --- ANIMATION --- */
+.reveal { opacity: 0; transform: translateY(30px); transition: 1s ease-out; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 992px) {
+    .contact-split-container { flex-direction: column; }
+    .map-wrapper { width: 100%; height: 350px; }
+}
