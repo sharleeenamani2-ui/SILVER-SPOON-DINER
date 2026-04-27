@@ -47,7 +47,7 @@ body { background-color: var(--dark); color: var(--white); font-family: var(--sa
 .story-centered { 
     padding: 150px 10%; 
     background: var(--dark); 
-    text-align: left; /* Left aligned like your reference image */
+    text-align: left; 
 }
 .story-content{
     text-align: center;
@@ -57,8 +57,9 @@ body { background-color: var(--dark); color: var(--white); font-family: var(--sa
      font-size: 3.5rem; 
      margin-bottom: 10px; }
 .gold-line { 
-    border: gold solid 5px;
-    width: 80%;
+    border: gold solid 2px;
+    width: 70%;
+        margin: 20px auto; 
     
      background: var(--gold); 
      margin-bottom: 30px; }
@@ -76,7 +77,11 @@ body { background-color: var(--dark); color: var(--white); font-family: var(--sa
        font-size: 1.2rem;
         margin-bottom: 5px;
      }
-.signature { color: var(--white); opacity: 0.8; font-size: 0.9rem; }
+.signature { 
+    color: var(--white);
+     opacity: 0.8;
+      font-size: 0.9rem;
+     }
 
 /* --- WHITE CONTACT LAYOUT (Matches Image 2) --- */
 .contact-white-layout {
