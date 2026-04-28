@@ -165,7 +165,7 @@ body {
 
 
 .room-gallery {
-    flex: 0 0 60%; 
+    flex: 0 0 55%; 
     height: 650px; 
     position: relative;
     border-radius: 4px;
@@ -190,14 +190,12 @@ body {
 
 .roomSlides[style*="display: block"] {
     display: block;
+
 }
-
-
 .room-details {
-    flex: 0 0 35%; 
-    padding-top: 10px;
+    flex: 1;   
+    max-width: 500px; 
 }
-
 .room-details h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--white);
@@ -207,31 +205,26 @@ body {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
-
-/* AMENITIES LIST */
-.amenities {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 40px;
+.room-description {
+  font-size: 14px;
+  color: #f0ecec;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
-.amenities li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
-    margin-bottom: 18px;
-    font-weight: 300;
+/* ⭐ FEATURES */
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    display: inline-flex;
-    justify-content: center;
-    color: var(--gold);
+.room-features li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color:gold;
 }
+
 
 /* BUTTONS */
 .action-row {
