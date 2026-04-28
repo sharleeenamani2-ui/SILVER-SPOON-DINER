@@ -529,7 +529,7 @@ body {
 .footer-logo {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    color: #c5a059; 
+    color: #c5a059; /* Gold */
     letter-spacing: 4px;
     margin-bottom: 10px;
 }
@@ -643,6 +643,23 @@ body {
     color: #666;
     letter-spacing: 1px;
 }
+/*  SMALL PHONES */
+@media screen and (max-width: 480px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-col:first-child {
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+
+
 
 
 
